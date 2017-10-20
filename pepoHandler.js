@@ -5,7 +5,7 @@
         loaded = false,
         cache = [],
         last = '',
-        client_id = 'b1926d7f59ebd08'; // Put your imgur client id here.
+        client_id = 'YOUR_IMGUR_CLIENT_ID_HERE'; // Put your imgur client id here.
 
     /*
      * @function load
@@ -22,7 +22,7 @@
 
         hashMap.put('Authorization', 'Client-ID ' + client_id);
 
-        jsonString = HttpRequest.getData(HttpRequest.RequestType.GET, 'https://api.imgur.com/3/album/H7Ec4/images', '', hashMap);
+        jsonString = HttpRequest.getData(HttpRequest.RequestType.GET, 'YOUR_ALBUM_LINK/IMAGES', '', hashMap);
 
         try {
             jsonObject = JSON.parse(jsonString.content);
